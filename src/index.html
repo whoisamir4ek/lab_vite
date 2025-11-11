@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap + Luxon App</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container text-center mt-5">
+        <div class="row">
+          <div class="col-2"></div>
+          <div class="col-8">
+            <button type="button" class="btn btn-danger w-100 py-3" data-bs-toggle="modal" data-bs-target="#timeModal">
+              Показать время
+            </button>
+          </div>
+          <div class="col-2"></div>
+        </div>
+      </div>
+      <div class="modal fade" id="timeModal" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Аглиуллин Амир</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <h5 h5 id="hh"></h5>
+                <script type="module" src="/js/main.js"></script>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
